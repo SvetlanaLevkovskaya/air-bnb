@@ -1,14 +1,15 @@
 'use client'
 
 import React, { FC, useCallback, useEffect, useState } from 'react';
-import { IoMdClose } from 'react-icons/all';
+
 import { Button } from '@/app/components/button';
 import styles from './Modal.module.css';
+import { IoMdClose } from 'react-icons/io';
 
 type ModalType = {
 	isOpen?: boolean;
-	onClose: () => void;
-	onSubmit: () => void;
+	onClose: Function;
+	onSubmit: Function;
 	title?: string;
 	body?: React.ReactElement;
 	footer?: React.ReactElement;
