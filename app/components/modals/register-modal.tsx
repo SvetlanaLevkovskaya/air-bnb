@@ -10,7 +10,8 @@ import { Input } from '@/app/components/inputs/input';
 import toast from 'react-hot-toast';
 import { Button } from '@/app/components/button';
 import { FcGoogle } from 'react-icons/fc';
-import { AiFillGithub } from 'react-icons/all';
+import { AiFillGithub } from 'react-icons/ai';
+
 
 export const RegisterModal = () => {
 	const registerModal = useRegisterModal();
@@ -36,7 +37,7 @@ export const RegisterModal = () => {
 				 .then(() => {
 					 registerModal.onClose();
 				 })
-				 .catch((error) => {
+				 .catch(() => {
 					 toast.error('Something went wrong!')
 				 })
 				 .finally(() => {
@@ -45,7 +46,7 @@ export const RegisterModal = () => {
 	}
 
 	const bodyContainer = 'flex flex-col gap-4';
-	const subtitle = 'text-neutral-500 font-light mt-2';
+	//const subtitle = 'text-neutral-500 font-light mt-2';
 	const footerContainer = 'flex flex-col gap-4 mt-3';
 	const loginLinkContainer = 'text-neutral-500 text-center mt-4 font-light';
 	const footerText = 'justify-center flex flex-row items-center gap-2'
