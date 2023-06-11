@@ -1,7 +1,7 @@
 'use client'
 
 import React, { FC } from 'react';
-import { FieldErrors, FieldValues, useForm, UseFormRegister } from 'react-hook-form';
+import { FieldErrors, FieldValues, UseFormRegister } from 'react-hook-form';
 import { BiDollar } from 'react-icons/bi';
 
 
@@ -23,9 +23,10 @@ export const Input: FC<InputType> = ({
 																			 formatPrice,
 																			 required,
 																			 errors,
+																			 register,
 																		 }) => {
 
-	const { register } = useForm()
+	/*const { register } = useForm()*/
 	const inputContainer = 'w-full relative';
 	const priceIcon = 'text-neutral-700 absolute top-5 left-2';
 	const inputField = `
