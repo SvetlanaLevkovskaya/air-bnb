@@ -26,7 +26,6 @@ export const Input: FC<InputType> = ({
 																			 register,
 																		 }) => {
 
-	/*const { register } = useForm()*/
 	const inputContainer = 'w-full relative';
 	const priceIcon = 'text-neutral-700 absolute top-5 left-2';
 	const inputField = `
